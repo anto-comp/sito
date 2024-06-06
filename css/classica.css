@@ -1,0 +1,415 @@
+nav{background: #ffffff;
+  height: 52px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;}
+
+nav ul{list-style: none;margin: 0 auto;padding: 0;width: 100%;max-width: 3000;}
+nav ul ul{display: none;position: absolute;top: 100%;left: 0;width: 100%;}
+nav ul li{position: relative;float:left;left:0;width:11.11%;text-align:center;}
+nav ul li:hover ul{display:block;}
+nav ul li li{position: relative;float:none;width:100%;border:none;}
+nav ul li a{display:block;text-decoration:none;color: rgb(0, 0, 0);padding: 15px 25px;font-size:1.2em;box-sizing: border-box;border-right:solid 2px #000000;}
+nav ul ul li a{font-size:1rem;border-bottom:solid 2px #000000;}
+nav ul ul li:first-child a{border-top:solid 2px #000000;}
+nav ul li:hover a{background:#000000;color: #ffffff;text-decoration:none;transition:0.5s;}
+nav ul li li:hover a{background:#ffffff;color: #000000;}
+
+body {
+  background: #ecf0f1;
+  font-family: "proxima-nova", "Lato", "Source Sans Pro", "Raleway", Arial, sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+body {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: #ef8b80;
+  font-family: "proxima-nova", "Lato", "Source Sans Pro", "Raleway", Arial, sans-serif;
+  -webkit-transition: background 0.25s ease;
+  -moz-transition: background 0.25s ease;
+  -ms-transition: background 0.25s ease;
+  -o-transition: background 0.25s ease;
+  transition: background 0.25s ease;
+}
+
+
+
+h3 {
+  cursor: default;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 0 0 15px;
+  text-transform: uppercase;
+}
+
+p {
+  cursor: default;
+  
+}
+
+
+
+div#cornice {
+  background: rgb(255, 255, 255);
+  border: 4px solid #ececec;
+  border-radius: 30px;
+  
+  max-width: 257px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 10px 25px rgba(51, 51, 51, 0.3);
+  -moz-box-shadow: 0px 10px 25px rgba(51, 51, 51, 0.3);
+  box-shadow: 0px 10px 25px rgba(51, 51, 51, 0.3);
+}
+
+div#cornice div#schermo {
+  background: #666666;
+  border: 2px solid #f2f2f2;
+  border-radius: 15px;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  width: 225px;
+  z-index: 1;
+}
+div#cornice div#schermo::after {
+  background: gray;
+  content: "";
+  display: block;
+  height: 130%;
+  left: 60%;
+  opacity: 0.15;
+  position: absolute;
+  pointer-events: none;
+  top: -25%;
+  width: 100%;
+  -moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+
+
+
+
+
+
+
+
+div#content {
+  padding: 15px;
+  position: relative;
+  z-index: 2;
+}
+/* sfondo sfocato dentro telefono*/
+div#background {
+  background-size: cover;
+  background-position: center;
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -ms-filter: blur(10px);
+  -o-filter: blur(10px);
+  filter: blur(10px);
+  -webkit-transition: background-image 0.25s ease;
+  -moz-transition: background-image 0.25s ease;
+  -ms-transition: background-image 0.25s ease;
+  -o-transition: background-image 0.25s ease;
+  transition: background-image 0.25s ease;
+}
+div#background::before {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+}
+div#background::after {
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 50%, #323232 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #323232 100%);
+}
+/* x animazioni es cambio sfondo colorato ecc */
+
+
+
+div.jcarousel {
+  left: -15px;
+  width: calc(100% + 30px);
+  position: relative;
+  overflow: hidden;
+}
+div.jcarousel ul#canzone {
+  width: 20000em;
+  position: relative;
+}
+div.jcarousel ul#canzone li.canz {
+  float: left;
+  margin: 10px 15px;
+  text-align: center;
+  width: calc(225px - 30px);
+}
+div.jcarousel ul#canzone li.canz img {
+  width: 92.5%;
+  -webkit-box-shadow: 0px 5px 25px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 5px 25px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 5px 25px rgba(50, 50, 50, 0.5);
+}
+
+
+div.jcarousel ul#canzone li.canz p.canz-titolo {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0 5px;
+}
+div.jcarousel ul#canzone li.canz p.canz-artista {
+  color: #b3b3b3;
+  font-size: 12px;
+  margin: 0;
+}
+/* grafica comandi */
+div#controls {
+  color: white;
+  display: table;
+  margin: 10px auto 25px;
+  text-align: center;
+  width: 75%;
+}
+div#controls span {
+  display: table-cell;
+  font-size: 20px;
+  vertical-align: middle;
+}
+/*pulsanti*/
+div#controls span#play-btn {
+  font-size: 34px;
+}
+
+/*scegli figura ursore su azioni*/
+div#controls span i {
+  cursor: pointer;
+}
+
+/* linea per portare avanti canzoni*/
+
+div#timeline {
+  position: relative;
+  margin: 0 auto;
+  width: 92.5%;
+}
+div#timeline span {
+  color: #b3b3b3;
+  font-size: 7px;
+  position: absolute;
+  top: -10px;
+}
+/*tempo corrente*/
+div#timeline span#current-time {
+  left: 0;
+}
+/*tempo totale*/
+div#timeline span#total-time {
+  right: 0;
+}
+/* barra sotto*/
+div#timeline div.slider {
+  background-color: gray;
+  border-radius: 2px;
+  cursor: pointer;
+  height: 2px;
+  position: relative;
+  width: 100%;
+}
+/* animazione barra*/
+div#timeline div.slider div.progress {
+  background-color: #e74c3c;
+  height: 100%;
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+}
+/* cerchio su barra*/
+div#timeline div.slider div.progress div.pin {
+  background-color: white;
+  border-radius: 8px;
+  height: 8px;
+  position: absolute;
+  pointer-events: all;
+  right: -5px;
+  top: -3px;
+  width: 8px;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.32);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.32);
+  -webkit-transition: transform 0.25s ease;
+  -moz-transition: transform 0.25s ease;
+  -ms-transition: transform 0.25s ease;
+  -o-transition: transform 0.25s ease;
+  transition: transform 0.25s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+html, body{
+  height: 100%;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container {
+  display: flex;
+/*   border:1px solid red; */
+  height: 100%;
+  align-items: center;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+  stroke: #4D163D;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+  stroke: #840037;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+  stroke: #BD0034;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: #BD0034;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #FDB731;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.fl-fl {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 190px;
+  position: fixed;
+  right: -160px;
+  z-index: 9184901;
+  font-weight: bold;
+  font-size: 10px;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  color: #000000 ;
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px;
+  vertical-align: top;
+}
+
+
+
+.float-ig {
+  border: #000000;
+  border: 10px; 
+  top: 160px;
+  background: #ffffff;
+  font-weight: bold;
+}
+
+.float-web {
+  top: 220px;
+  border: #000000;
+  background: #ffffff;
+  font-weight: bold;
+}
+
+.float-fb {
+  top: 280px;
+  border: #000000;
+  background: #ffffff;
+  font-weight: bold;
+}
+
+#nero{
+  color: #000000;
+}
+
